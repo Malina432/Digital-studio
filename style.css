@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Apple Chancery, cursive; 
+    font-size: 16px;
+    color: #35424a;;
+    line-height: 1.6em;
+    overflow: scroll;
+}
+
+
+
+
+#back-foto{
+    height: 100vh;
+    background: url('img/tło.jpg') no-repeat;
+    background-size: cover;
+    background-position:center;
+    top: -50px;}
+  
+.intro {
+    display: block;
+    float: left;
+    background-color: hsla(0, 0%, 96%, 0.35);
+    margin: 40px;
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    align-items: flex-end;
+}
+
+.intro h1{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+} 
+.intro p{
+    text-align: center;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: 65px 65px 40px;
+    justify-items: center;
+    align-self: center;
+
+}
+
+nav{
+    height: 33%;
+    position: fixed;
+    right: 10px;
+    top: 33vh;
+}
+
+footer{
+    font-size: 14px;
+    position:absolute;
+    width: 100%;
+    background-color: hsla(0, 0%, 90%, 0.5);
+    bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+}
