@@ -30,6 +30,7 @@
     height: 3px;
     background: #d9d9d9;
     margin:5px 5px 5px 60px;
+    transition: all 0.4s ease;
 }
 .burger{
     display: none;
@@ -69,7 +70,7 @@ p{
 
 button{
     width: 180px;
-    color: rgb(23, 23, 24);
+    color: rgb(24, 24, 24);
     font-size: 13px;
     font-weight: 700;
     padding: 12px 0;
@@ -181,9 +182,9 @@ h5, .card p{
 
 @media (max-width : 500px){
 
-body{ 
+.container{ 
     overflow-x: hidden;}
-    
+
     .container{
         height: auto;
     }
@@ -247,10 +248,17 @@ body{
     }
     .nav-links li{
         opacity: 0;
+        padding-bottom: 33%;
+        padding-top: 33%;
     }
     .burger{
         display: block;
         cursor: pointer;
+    }
+    .nav-links li a{
+        color: rgb(24, 24, 24);
+        font-weight: 550;
+        
     }
 
     .nav-active{
@@ -267,5 +275,14 @@ body{
         opacity: 1;
         transform: translateX(0px);
     }
+}
 
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
 }
