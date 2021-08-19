@@ -1,0 +1,32 @@
+@media(max-width :1110px){
+    .row{
+     display: inline-block;
+     margin: 20px auto;
+
+    }
+
+    .col h1, .card h5, .row p, .col button{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card, :no-button{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .container{
+        height: auto;
+
+    }
+    
+    .navbar{
+        padding-top: 15px;
+    }
+    nav ul li{
+        margin-left: 20px;
+    }
+
+    
+}
