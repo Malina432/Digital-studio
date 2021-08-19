@@ -69,7 +69,7 @@ button{
     font-size: 13px;
     font-weight: 700;
     padding: 12px 0;
-    background: #d9d9d9;
+    background: #f4f4f4;
     border: 0;
     border-radius: 25px;
     outline: none;
@@ -119,11 +119,36 @@ h5, .card p{
 }
 
 
-@media(max-width :1110px){
+@media  (min-width :475px) and (max-width :1110px){
     .row{
-     display: inline-block;
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-gap: 20px;
+        grid-auto-rows: 2, 1fr;
      margin: 20px auto;
+    }
 
+    .card{
+        margin: auto;
+    }
+
+    .grid {
+        grid-column: 1 / 2;
+        grid-row: 1;}
+
+    .card1{
+        grid-column: 1 / -1 ;
+        grid-row: 2 / 3 ;
+    }
+
+    .card2{
+        grid-column: 2 / 3 ;
+        grid-row: 2 / 3 ;
+    }
+    .col{
+        display: grid;
+        grid-template-columns: 2 1fr 1fr;
+        flex-basis: 100%;
     }
 
     .col h1, .card h5, .row p, .col button{
@@ -132,7 +157,7 @@ h5, .card p{
         margin-left: auto;
         margin-right: auto;
     }
-    .card, :no-button{
+    .card, button{
         display: block;
         margin: 20px auto;
     }
@@ -148,6 +173,41 @@ h5, .card p{
     nav ul li{
         margin-left: 20px;
     }
+}
 
-    
+@media (max-width : 474px){
+
+    .container{
+        height: auto;
+    }
+
+    .row{
+        display:block;
+        padding-bottom: 20px;
+    }
+
+    .col h1, .card h5, .row p, .col button{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card, button{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .navbar{
+        padding-top: 15px;
+    }
+    nav ul li{
+        margin-left: 20px;
+    }
+
+
+    nav{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
